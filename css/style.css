@@ -3,8 +3,9 @@
 }
 body{
     font-family: 'Lato', Verdana, sans-serif;   
-    margin: 0 6.5%;
+    margin: 20px;
     background-color: aliceblue;
+    font-size: 1.125em;
 }
 .main-header,.main-nav{
     display:flex;
@@ -22,7 +23,7 @@ body{
     flex:1;
 }
 .nav-item{
-    background-color: white;
+    font-size: .8rem;
     margin:5px
 }
 .main-header img{
@@ -74,15 +75,20 @@ footer{
     text-decoration: none;
     color: black;
 }
-/* -------------------Media Quiries----------------------*/ 
+/* -------------------Media Queries----------------------*/ 
 
 @media screen and (min-width: 768px) {
-
+    body{
+        font-size: 1.25em;
+    }
     .main-nav{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap; 
         justify-content: space-around;
+    }
+    .name{
+        flex:1 100%;
     }
     .bio{
         display:flex;
@@ -102,10 +108,27 @@ footer{
         flex-basis: auto;
         width:50%;
     }
-
-
-
-
-
     
+}
+@media screen and (min-width: 1024px){
+    body{
+        font-size: 1.5em;
+    }
+.main-header,.main-nav{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.name{
+    margin:0;
+    flex:1 10%;
+    align-self: flex-start;
+    text-align: left;
+}
+.intro{
+margin:0;
+text-align: left;
+}
+.item,.item img{
+    flex-basis: 33%;
+}
 }
