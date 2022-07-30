@@ -3,9 +3,8 @@
 }
 body{
     font-family: 'Lato', Verdana, sans-serif;   
-    margin: 20px;
+    margin: 15px;
     background-color: aliceblue;
-    font-size: 1.125em;
 }
 .main-header,.main-nav{
     display:flex;
@@ -57,6 +56,9 @@ ul{
     padding-top: 75px;
     font: size 0.90em;
 }
+.contact p {
+    padding-bottom: 25px;
+}
 .contact ul li{
     padding: 10px 0;
 }
@@ -94,9 +96,12 @@ footer{
         display:flex;
         flex-direction:row-reverse;
     }
+    .intro{
+            margin-top:0;
+            text-align: left;
+    }
     .profile{
         flex:1;
-        margin: auto;
         flex-wrap: wrap;
     }
     .container{
@@ -108,7 +113,10 @@ footer{
         flex-basis: auto;
         width:50%;
     }
-    
+    .contact{
+        flex: 1 100%;
+        max-width: 60%;
+    }
 }
 @media screen and (min-width: 1024px){
     body{
@@ -124,11 +132,7 @@ footer{
     align-self: flex-start;
     text-align: left;
 }
-.intro{
-margin:0;
-text-align: left;
-}
 .item,.item img{
-    flex-basis: 33%;
+    flex-basis: 32%;
 }
 }
