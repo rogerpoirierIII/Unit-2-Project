@@ -17,7 +17,7 @@ body{
 
 }
 .nav-item,.name{
-    padding: 15px 0;
+    padding: 15px;
     font-weight: 700;
     flex:1;
 }
@@ -46,16 +46,14 @@ ul{
 .item h4{
     font-weight: 700;
 }
-.item,.item img{
+.item,.item img,.title{
     width: 95%;
     margin:0 auto;
     text-align: center;
-    padding: 10px 0;
-}
-.portfolio-6{
-    padding-bottom: 75px;
+    padding: 15px 0;
 }
 .contact{
+    padding-top: 75px;
     font: size 0.90em;
 }
 .contact ul li{
@@ -75,4 +73,39 @@ footer{
 .main-footer a{
     text-decoration: none;
     color: black;
+}
+/* -------------------Media Quiries----------------------*/ 
+
+@media screen and (min-width: 768px) {
+
+    .main-nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-around;
+    }
+    .bio{
+        display:flex;
+        flex-direction:row-reverse;
+    }
+    .profile{
+        flex:1;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .item,item img{
+        flex-basis: auto;
+        width:50%;
+    }
+
+
+
+
+
+    
 }
